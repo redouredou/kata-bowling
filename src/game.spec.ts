@@ -33,8 +33,23 @@ describe('game tests', () => {
         game.roll(1);
         game.roll(1);
 
-
         expect(game.score).toBe(2);
+    })
+
+    it('should have score 4 when call two times roll(2) ', () => {
+
+        game.roll(2);
+        game.roll(2);
+
+        expect(game.score).toBe(4);
+    })
+
+    it('should have score 3 when call roll(1) and roll(2) ', () => {
+
+        game.roll(1);
+        game.roll(2);
+
+        expect(game.score).toBe(3);
     })
 
 
