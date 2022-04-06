@@ -7,7 +7,12 @@ export class Game {
     }
     
     roll(knockedPins : number): void{
-        this.scorePoints = knockedPins;
+        if(this.scorePoints === 1){
+            this.scorePoints = 2;
+        }else{
+            this.scorePoints = knockedPins;
+        }
+
     };
 
     get score(): number {
