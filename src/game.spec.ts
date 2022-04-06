@@ -18,4 +18,12 @@ describe('game tests', () => {
         expect(game.score).toBe(2);
     })
 
+    it('should have score 3 when call one times roll(3) ', () => {
+        const game= new Game();
+
+        game.roll(3);
+
+        expect(game.score).toBe(3);
+    })
+
 })
