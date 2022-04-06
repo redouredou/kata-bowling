@@ -7,8 +7,11 @@ export class Game {
     }
     
     roll(knockedPins : number): void{
-        if(this.scorePoints === 2){
+        if(this.scorePoints === 2 && knockedPins === 2){
             this.scorePoints = 4;
+        }
+        else if(this.scorePoints === 2 && knockedPins === 3){
+            this.scorePoints = 5;
         }
         else if(this.scorePoints === 1 && knockedPins === 1){
             this.scorePoints = 2;

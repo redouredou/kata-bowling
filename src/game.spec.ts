@@ -52,6 +52,14 @@ describe('game tests', () => {
         expect(game.score).toBe(3);
     })
 
+    it('should have score 5 when call roll(2) and roll(3) ', () => {
+
+        game.roll(2);
+        game.roll(3);
+
+        expect(game.score).toBe(5);
+    })
+
 
 
 })
